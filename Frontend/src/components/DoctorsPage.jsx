@@ -3,7 +3,7 @@ import { doctorsPageStyles } from '../assets/dummyStyles';
 import { Search, ChevronRight, Medal, MousePointer2Off, X, CircleChevronUp, CircleChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 const DoctorsPage = () => {
-  const API_BASE= 'http://localhost:4000';  
+  const API_BASE= 'https://meditrack-hospital-management-1.onrender.com';  
 
   const [allDoctors, setAllDoctors] = useState([]);
   const [loading, setLoading] = useState(true);
