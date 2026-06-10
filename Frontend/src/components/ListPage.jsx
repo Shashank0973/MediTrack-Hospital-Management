@@ -3,7 +3,7 @@ import { listPageStyles } from '../assets/dummyStyles'
 import { useParams } from 'react-router-dom';
 import { Calendar, Phone, Search, X } from 'lucide-react';
 
-const API_BASE = "http://localhost:4000";
+const API_BASE = "https://meditrack-hospital-management-1.onrender.com";
 function parseDateTime(date, time) {
   return new Date(`${date}T${time}:00`);
 }
@@ -299,7 +299,7 @@ function RescheduleButton({ appointment, onReschedule }) {
   );
 }
 const ListPage = () => {
-  const API_BASE = "http://localhost:4000";
+  const API_BASE = "https://meditrack-hospital-management-1.onrender.com";
   const [appointments, setAppointments] = useState([]);
   const [search, setSearch] = useState("");
   const [statusFilter, setStatusFilter] = useState("");
