@@ -3,7 +3,7 @@ import { homeDoctorsStyles, iconSize } from '../assets/dummyStyles.js'
 import { Medal, ChevronRight, MousePointerOff } from "lucide-react"; 
 import {Link} from 'react-router-dom'
 const HomeDoctors = ({previewCount = 8}) => {
-  const API_BASE= 'http://localhost:4000'
+  const API_BASE= 'https://meditrack-hospital-management-1.onrender.com'
   const [doctors, setDoctors] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error,setError] = useState("")
