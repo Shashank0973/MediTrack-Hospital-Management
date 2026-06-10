@@ -5,7 +5,7 @@ import {createDoctor, deleteDoctor, doctorLogin, getDoctorById, getDoctors, togg
 
 import doctorAuth from '../middlewares/doctorAuth.js';
 
-const upload = multer({ dest:  "/tmp"});
+const upload = multer({ dest:  "./tmp"});
 
 const doctorRouter = express.Router();
 
